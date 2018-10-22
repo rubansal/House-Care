@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/rla"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="62dp"
+            android:text="What we provide :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView32"
+            android:padding="8dp"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Accordion"
+            custom:pager_animation_span="1100">
+
+        </com.daimajia.slider.library.SliderLayout>
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            custom:selected_color="#0095BF"
+            custom:selected_drawable="@drawable/ic_help_black_24dp"
+            custom:selected_height="6dp"
+            custom:selected_padding_left="5dp"
+            custom:selected_padding_right="5dp"
+            custom:selected_width="6dp"
+            custom:shape="oval"
+            custom:unselected_color="#55333333"
+            custom:unselected_height="6dp"
+            custom:unselected_padding_left="5dp"
+            custom:unselected_padding_right="5dp"
+            custom:unselected_width="6dp"
+
+            />
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView22"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/slider"-->
+        <!--android:layout_marginStart="19dp"-->
+        <!--android:layout_marginTop="9dp"-->
+        <!--android:text="We provide services at:"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rrr"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView22">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView7"-->
+        <!--android:layout_width="44dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="28dp"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--custom:srcCompat="@drawable/ic_account_balance_black_24dp"-->
+        <!--tools:ignore="VectorDrawableCompat" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView9"-->
+        <!--android:layout_width="44dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignTop="@+id/imageView7"-->
+        <!--android:layout_marginEnd="28dp"-->
+        <!--custom:srcCompat="@drawable/ic_account_balance_black_24dp"-->
+        <!--tools:ignore="VectorDrawableCompat" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView19"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/imageView7"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Gurgaon"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView15"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/imageView7"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Gurgaon"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView16"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/imageView9"-->
+        <!--android:layout_below="@+id/imageView7"-->
+        <!--android:text=" Noida"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView8"-->
+        <!--android:layout_width="44dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_alignTop="@+id/imageView7"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--custom:srcCompat="@drawable/ic_account_balance_black_24dp"-->
+        <!--tools:ignore="VectorDrawableCompat" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView20"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/imageView7"-->
+        <!--android:layout_marginStart="5dp"-->
+        <!--android:text="    New Delhi"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2" />-->
+
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView14"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/fab5"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="-50dp"-->
+        <!--android:background="@color/grey_100"-->
+        <!--android:fontFamily="@font/eagle_lake"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="25% off on first booking !"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="16sp" />-->
+
+    <!--<ListView-->
+        <!--android:id="@+id/listServices"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/textView14"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:dividerHeight="20dp"/>-->
+
+
+    <!--<com.google.android.gms.ads.AdView-->
+        <!--android:id="@+id/adView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_below="@+id/rla"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--ads:adSize="BANNER"-->
+        <!--ads:adUnitId="@string/banner_ad_unit_id" />-->
+
+
+</LinearLayout>
+
+
+
